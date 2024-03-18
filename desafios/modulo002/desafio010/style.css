@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'robo';
+    src: url(fontes/idroid.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+    :root{ 
+    --fundo:#ffdece80;
+    --cor02:#c6ffef;
+    --cor03:#90e4b0;
+    --cor04:#0B6E4F;
+    --cor05:#1D3557;
+}
+    
+body{
+    background-color: var(--fundo);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cor04);
+    text-align: center;
+    padding:1px;
+    color: white;
+    font-weight: bold;
+}
+
+header > h1{
+    font-size: 40px;
+    margin:18px;
+    color: white;
+}
+
+nav{
+    text-align: left;
+    background-color: var(--cor04);
+    padding: 10px;
+}
+
+nav > a{
+    margin-right: 15px;
+    color: var(--cor02);
+    font-weight: bold;
+    background-color: transparent;
+}
+
+nav > a:hover{
+    background-color: var(--cor05);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main{
+    min-width: 280px;
+    max-width:800px;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+aside{
+    background-color: var(--cor03);
+    padding: 10px 0px;
+    padding-top: 0;
+    border-radius: 10px 
+}
+
+img{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+img.pequeno{
+    width:30%;
+    margin: auto;
+    display: block;
+}
+
+.caixatitulo{
+    background-color: var(--cor02);
+    box-shadow: 3px 4px 3px rgba(0, 71, 30, 0.233);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+}
+
+h2,h3{
+    font-family: 'robo', Arial, Helvetica, sans-serif;
+    color: var(--cor04);
+    margin: 10px 0px;
+}
+
+p{
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor05);
+    font-weight: bolder;
+    background-color: var(--cor02);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+ul{
+
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor04);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

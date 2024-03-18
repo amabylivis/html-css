@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="midia/videogato.mp4" width="260px" controls poster="imagens/foto-p.png"></video>
+
+    <p>outra forma de carregar vídeos mais leve </p>
+    <video controls width="260px" poster="imagens/foto-p.png" loop>
+    <source src="midia/videogato.mp4" type="video/mp4">
+    <source src="midia/videogato.webm" type="video/webm">
+    <source src="midia/videogato.ogv" type="video/ogg">
+    <p>Infelizmente seu navegador não é compativel com vídeos</p>
+    </video>
+    <h1>Vamos adicionar um vídeo hospedado do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/naIHJQCWNT0?si=0YgbR-GVmA47OOjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

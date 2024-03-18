@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferente ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+       <source media="(max-width: 745px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1045px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Vamos adicionar um áudio no nosso site</h1>
+    <audio src="midia/audio mel.ogg" autoplay controls></audio>
+    <p>Tambem temos outra opção de código para áudios</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/audio mel.ogg" type="audio/mp3">
+        <source src="midia/audio mel.ogg" type="audio/ogg">
+        <p>Desculpe! Seu navegador não suporta esse tipo de arquivo. Se quiser baixa-lo <a href="midia/audio mel.ogg" download="midia/audio mel.ogg">clique aqui</a></p>
+    </audio>
+</body>
+</html>
